@@ -1,8 +1,10 @@
 {
   "name": "@magro/vui",
+  "module": "dist/vui.es.js",
+  "typings": "types/index.d.ts",
   "scripts": {
     "dev": "vite build --mode development",
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build"
   },
   "dependencies": {
     "vue": "^3.2.29"
