@@ -10,6 +10,7 @@ importers:
 
   apps/sink:
     specifiers:
+      '@magro/vui': workspace:*
       '@types/node': ^16.11.22
       '@vitejs/plugin-vue': ^2.2.0
       '@vue/tsconfig': 0.1.3
@@ -18,6 +19,7 @@ importers:
       vue: ^3.2.31
       vue-tsc: 0.31.4
     dependencies:
+      '@magro/vui': link:../../packages/magro-vui
       vue: 3.2.31
     devDependencies:
       '@types/node': 16.11.25
