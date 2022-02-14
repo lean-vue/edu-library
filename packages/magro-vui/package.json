@@ -3,7 +3,7 @@
   "module": "dist/vui.es.js",
   "typings": "types/index.d.ts",
   "scripts": {
-    "dev": "vite build --mode development --watch",
+    "dev": "vue-tsc --declaration --emitDeclarationOnly && vite build --mode development --watch",
     "build": "vue-tsc --declaration --emitDeclarationOnly && vite build"
   },
   "dependencies": {
