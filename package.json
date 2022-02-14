@@ -1,6 +1,12 @@
 {
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "samples/*"
+  ],
   "devDependencies": {
     "prettier": "^2.5.1"
-  }
+  },
+  "packageManager": "pnpm@6.31.0"
 }
