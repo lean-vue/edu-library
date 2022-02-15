@@ -1,6 +1,7 @@
-import { defineConfig } from 'vitepress';
+import { defineConfigWithTheme } from 'vitepress';
+import type { DefaultTheme } from './theme/config';
 
-export default defineConfig({
+export default defineConfigWithTheme<DefaultTheme.Config>({
   base: '/docs',
   title: 'Lean Vue',
 
