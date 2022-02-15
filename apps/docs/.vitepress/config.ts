@@ -34,6 +34,10 @@ export default defineConfig({
               text: 'Template Syntax',
               link: '/guide/essentials/template-syntax',
             },
+            {
+              text: 'Reactivity',
+              link: '/guide/essentials/reactivity',
+            },
           ],
         },
       ],
