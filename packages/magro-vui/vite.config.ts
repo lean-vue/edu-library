@@ -10,6 +10,12 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['vue'],
+      output: {
+        assetFileNames: (assetInfo) =>
+          assetInfo.name === 'style.css'
+            ? 'vui.css'
+            : (assetInfo.name as string),
+      },
     },
   },
 });
