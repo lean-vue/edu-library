@@ -5,6 +5,7 @@
     "build": "vitepress build"
   },
   "dependencies": {
-    "vitepress": "^0.22.1"
+    "vitepress": "^0.22.1",
+    "vue": "^3.2.31"
   }
 }
