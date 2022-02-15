@@ -5,6 +5,8 @@
     "build": "vitepress build"
   },
   "dependencies": {
+    "@docsearch/css": "^3.0.0-alpha.50",
+    "@docsearch/js": "^3.0.0-alpha.50",
     "vitepress": "^0.22.1",
     "vue": "^3.2.31"
   }

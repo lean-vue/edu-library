@@ -14,9 +14,13 @@ importers:
 
   apps/docs:
     specifiers:
+      '@docsearch/css': ^3.0.0-alpha.50
+      '@docsearch/js': ^3.0.0-alpha.50
       vitepress: ^0.22.1
       vue: ^3.2.31
     dependencies:
+      '@docsearch/css': 3.0.0-alpha.50
+      '@docsearch/js': 3.0.0-alpha.50
       vitepress: 0.22.2
       vue: 3.2.31
 

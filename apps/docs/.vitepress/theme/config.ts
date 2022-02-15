@@ -1,1 +1,3 @@
-export { DefaultTheme } from '../shared'
+import type { DefaultTheme } from 'vitepress';
+
+export { DefaultTheme };
