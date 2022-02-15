@@ -1,0 +1,10 @@
+{
+  "name": "docs",
+  "scripts": {
+    "dev": "vitepress dev --port 3030",
+    "build": "vitepress build"
+  },
+  "dependencies": {
+    "vitepress": "^0.22.1"
+  }
+}
