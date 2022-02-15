@@ -2,6 +2,7 @@
   "recommendations": [
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "johnsoncodehk.volar"
+    "johnsoncodehk.volar",
+    "bradlc.vscode-tailwindcss"
   ]
 }

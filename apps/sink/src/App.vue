@@ -3,10 +3,10 @@ import { VuiButton } from '@magro/vui';
 </script>
 
 <template>
-  <main>
-    <h1>Vui Sink</h1>
+  <main class="mx-auto mt-12 max-w-xl flex flex-col items-center gap-y-8">
+    <h1 class="text-3xl text-gray-700 font-semibold">Vui Sink</h1>
     <div>
-      <VuiButton label="Click me!" />
+      <VuiButton label="Click me!" primary />
     </div>
   </main>
 </template>
