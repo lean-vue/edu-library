@@ -1,18 +1,52 @@
 <script lang="ts" setup>
-import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue';
+import { provide, reactive } from 'vue';
+import { TabGroup, TabList, Tab, TabPanels } from '@headlessui/vue';
+import { TabsContext, type TabsApi } from './tabs-context';
+
+defineProps({
+  defaultIndex: Number,
+});
+
+const emit = defineEmits({
+  change: (_index: number) => true,
+});
+const emitChange = (ev: unknown) => emit('change', ev as number);
+
+const tabs = reactive([] as string[]);
+const api: TabsApi = {
+  registerTab(title) {
+    tabs.push(title);
+  },
+};
+
+provide(TabsContext, api);
 </script>
 
 <template>
-  <TabGroup>
-    <TabList>
-      <Tab>Tab 1</Tab>
-      <Tab>Tab 2</Tab>
-      <Tab>Tab 3</Tab>
-    </TabList>
+  <TabGroup :selected-index="defaultIndex" @change="emitChange">
+    <div class="border-b border-gray-200 flex justify-center">
+      <TabList as="nav" class="-mb-px flex space-x-8">
+        <Tab
+          as="template"
+          v-slot="{ selected }"
+          v-for="(title, index) in tabs"
+          :key="index"
+        >
+          <button
+            :class="[
+              'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm',
+              selected
+                ? 'border-[color:var(--c-brand-light)] text-[color:var(--c-brand)]'
+                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300',
+            ]"
+          >
+            {{ title }}
+          </button>
+        </Tab>
+      </TabList>
+    </div>
     <TabPanels>
-      <TabPanel>Content 1</TabPanel>
-      <TabPanel>Content 2</TabPanel>
-      <TabPanel>Content 3</TabPanel>
+      <slot></slot>
     </TabPanels>
   </TabGroup>
 </template>
