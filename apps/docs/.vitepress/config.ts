@@ -4,11 +4,17 @@ import type { DefaultTheme } from './theme/config';
 export default defineConfigWithTheme<DefaultTheme.Config>({
   base: '/docs',
   title: 'Lean Vue',
+  lang: 'de-DE',
+  description: 'Trainings-Materialien zu meiner Vue Schulung',
 
   srcDir: 'src',
   outDir: 'dist',
 
   themeConfig: {
+    repo: 'lean-vue/docs',
+    docsDir: 'apps/docs/src',
+    editLinks: true,
+
     nav: [
       { text: 'Docs', link: '/guide/introduction', activeMatch: '^/guide/' },
     ],
