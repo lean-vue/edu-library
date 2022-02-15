@@ -1,10 +1,15 @@
 {
   "pipeline": {
+    "typings": {
+      "dependsOn": ["^typings"],
+      "outputs": ["types/**"]
+    },
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["typings", "^build"],
       "outputs": ["dist/**", "types/**"]
     },
     "dev": {
+      "dependsOn": ["typings"],
       "cache": false
     }
   }
