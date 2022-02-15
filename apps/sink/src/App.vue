@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VuiButton } from '@magro/vui';
+import { VuiButton, VuiTabs } from '@magro/vui';
 </script>
 
 <template>
@@ -7,6 +7,9 @@ import { VuiButton } from '@magro/vui';
     <h1 class="text-3xl text-gray-700 font-semibold">Vui Sink</h1>
     <div>
       <VuiButton label="Click me!" primary />
+    </div>
+    <div>
+      <VuiTabs />
     </div>
   </main>
 </template>
