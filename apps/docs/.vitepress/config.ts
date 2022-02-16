@@ -50,4 +50,13 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
       ],
     },
   },
+
+  vite: {
+    server: {
+      fs: {
+        // for when developing with locally linked theme
+        allow: ['../../..'],
+      },
+    },
+  },
 });
