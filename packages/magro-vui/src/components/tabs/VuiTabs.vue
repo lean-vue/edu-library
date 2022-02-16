@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { provide, reactive } from 'vue';
+import { provide, reactive, ref } from 'vue';
 import { TabGroup, TabList, Tab, TabPanels } from '@headlessui/vue';
 import { TabsContext, type TabsApi } from './tabs-context';
 
@@ -12,10 +12,10 @@ const emit = defineEmits({
 });
 const emitChange = (ev: unknown) => emit('change', ev as number);
 
-const tabs = reactive([] as string[]);
+const tabs = ref([] as string[]);
 const api: TabsApi = {
   registerTab(title) {
-    tabs.push(title);
+    tabs.value.push(title);
   },
 };
 
@@ -23,7 +23,7 @@ provide(TabsContext, api);
 </script>
 
 <template>
-  <TabGroup :selected-index="defaultIndex" @change="emitChange">
+  <TabGroup :default-index="defaultIndex" @change="emitChange">
     <div class="border-b border-gray-200 flex justify-center">
       <TabList as="nav" class="-mb-px flex space-x-8">
         <Tab
