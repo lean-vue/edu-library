@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "vue": "^3.2.31",
-    "@magro/vui": "workspace:*"
+    "@magro/vui": "*"
   },
   "devDependencies": {
     "@types/node": "^16.11.22",
