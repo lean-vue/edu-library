@@ -8,6 +8,9 @@
       "dependsOn": ["typings", "^build"],
       "outputs": ["dist/**", "types/**"]
     },
+    "lint": {
+      "outputs": []
+    },
     "dev": {
       "dependsOn": ["typings"],
       "cache": false
