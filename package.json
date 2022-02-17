@@ -14,15 +14,5 @@
     "prettier-plugin-tailwindcss": "^0.1.7",
     "turbo": "^1.1.2"
   },
-  "packageManager": "pnpm@6.31.0",
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search",
-        "react",
-        "react-dom",
-        "@types/react"
-      ]
-    }
-  }
+  "packageManager": "pnpm@6.31.0"
 }
