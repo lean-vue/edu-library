@@ -1,3 +1,3 @@
-# Project: docs
+# Project: edu-library
 
 > Vue Trainings-Materialien
