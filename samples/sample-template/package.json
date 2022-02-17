@@ -9,15 +9,15 @@
     "lint": "eslint src --ext .vue,.ts --fix"
   },
   "dependencies": {
-    "vue": "^3.2.29"
+    "vue": "^3.2.31"
   },
   "devDependencies": {
-    "@magro/eslint-config": "*",
-    "@types/node": "^16.11.22",
-    "@vitejs/plugin-vue": "^2.1.0",
+    "@magro/eslint-config": "workspace:*",
+    "@types/node": "^16.11.25",
+    "@vitejs/plugin-vue": "^2.2.0",
     "@vue/tsconfig": "^0.1.3",
     "typescript": "~4.5.5",
-    "vite": "^2.7.13",
-    "vue-tsc": "^0.31.1"
+    "vite": "^2.8.3",
+    "vue-tsc": "^0.31.4"
   }
 }
