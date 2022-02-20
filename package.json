@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
+    "samples": "turbo run dev --parallel --scope=\"edu-*\"",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "format": "prettier apps packages samples --write --ignore-path .gitignore"
