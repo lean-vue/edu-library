@@ -10,7 +10,7 @@
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
     <article
       class="bg-white border border-gray-200 shadow-sm overflow-hidden rounded-lg"
     >
